@@ -16,7 +16,7 @@ jobs:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
-       # Steps represent a sequence of tasks that will be executed as part of the job
+    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
@@ -29,9 +29,8 @@ jobs:
     - name: install surge
       run: npm install -g surge
     - name: run surge
-     run: surge ./ bootcampnewapp001.surge.sh --token ${{secrets.SURGE_APP}}
-      
-      
+      run: surge ./ asadullah007.surge.sh --token ${{secrets.SURGE_APP}}
+          
       
       
       
